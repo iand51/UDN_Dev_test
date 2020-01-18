@@ -122,4 +122,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'participant_home'
-LOGIN_URL='login'
+LOGIN_URL = 'login'

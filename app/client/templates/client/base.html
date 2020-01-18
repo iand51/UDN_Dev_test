@@ -40,8 +40,15 @@
       </nav>
     </header>
     <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8">
+      <div class="row mx-auto d-block">
+        {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        <div>
           {% block content %}{% endblock %}
         </div>
     </main>
