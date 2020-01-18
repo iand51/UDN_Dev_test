@@ -12,7 +12,7 @@ class UserInfo(models.Model):
         ('No', 'No')
     ]
     user = models.OneToOneField(User, on_delete = models.CASCADE, related_name = "userInfo")
-    age  = models.FloatField()
+    age  = models.IntegerField()
     have_siblings = models.CharField(max_length=3, choices=CHOICES, default="No")
     known_env_exposures = models.CharField(max_length=30)
     known_genetic_mutations = models.CharField(max_length=30)

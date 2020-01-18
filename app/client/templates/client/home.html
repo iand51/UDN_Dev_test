@@ -1,0 +1,29 @@
+{% extends "client/base.html" %}
+{% block content %}
+
+    <div class = "container">
+      <div class = "row d-flex justify-content-center">
+      <table id = "participants">
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Have Siblings?</td>
+          <td>Any Known Genetic Exposures</td>
+          <td>Any Known Genetic Mutations</td>
+        </tr>
+        {%for participant in context%}
+          <tr>
+            <td>{{participant.name}}</td>
+            <td>{{participant.age}}</td>
+            <td>{{participant.have_siblings}}</td>
+            <td>{{participant.known_env_exposures}}</td>
+            <td>{{participant.known_genetic_mutations}}</td>
+
+          </tr>
+
+
+        {%endfor%}
+      </table>
+      </div>
+    </div>
+{% endblock content %}
