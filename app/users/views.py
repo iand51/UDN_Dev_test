@@ -32,7 +32,7 @@ class ParticipantFormView(View):
             participant.save()
             user.refresh_from_db()
             messages.success(request, f'Your account has been created! You are now able to log in.')
-            return redirect('participant_home')
+            return redirect('login')
 
         else:
             messages.error(request, f'Invalid Data')
