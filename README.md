@@ -13,27 +13,21 @@ For this test we would like you to create a small web app. Specifically you shou
 
 ### Getting started 
 
-<ol>
-  <li>
-    Start by creating an empty python3 enviornment <br/>
+
+  
+   1. Start by creating an empty python3 enviornment <br/>
     `python3 -m venv <myenviornmentname> `
     
-  </li>
-  <li>
-    Activate the enviornment <br/>
+
+   2. Activate the enviornment <br/>
     `source <myenviornmentname>/bin/activate`
-  
-  </li>
-  <li>
-    Change into the root directory of the project and install the requirements file.
-  </li>
-  <li>
-    Cd into the app directory and you can now make initial migrations with <br/>
+
+   3. Change into the root directory of the project and install the requirements file.
+
+
+   4. Cd into the app directory and you can now make initial migrations with <br/>
     `python manage.py makemigrations` 
    
-  </li>
-  <li>
-    Once migrations have been made you can start the application with <br/>
+   5. Once migrations have been made you can start the application with <br/>
     `python manage.py runserver`
-  </li>
-</ol>
+
