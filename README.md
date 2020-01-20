@@ -50,3 +50,21 @@ For this test we would like you to create a small web app. Specifically you shou
   |Name|age|siblings|genetic mutations|env exposures|  
   
 4. Note to add information to the column one must sign up under a new user, or the admin can add one on the admin panel. 
+
+<hr/>
+
+### Running the tests
+
+- To run the applications test simply run <br/>
+ `python manage.py test` in the app directory 
+ 
+- I did my best to have the tests cover as much of the application as possible given the time frame. They cover 
+  1. Models 
+  2. Views 
+  3. Forms 
+
+<hr/>
+
+### Additional Information 
+- to create a superuser simply cd into the app directory and run the command<br/>
+`python manage.py createsuperuser` 
